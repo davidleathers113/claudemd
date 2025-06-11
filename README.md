@@ -1,119 +1,212 @@
-# Claude.md Creative Uses Collection
+# Awesome Claude Code & CLAUDE.md 🤖 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated repository of innovative and creative implementations of CLAUDE.md files for [Claude Code](https://www.anthropic.com/claude-code), Anthropic's agentic coding assistant.
+> A curated collection of creative CLAUDE.md files, Claude Code patterns, and orchestration techniques for AI-assisted development
 
-## 🎯 Purpose
+[![GitHub stars](https://img.shields.io/github/stars/davidleathers113/claudemd?style=social)](https://github.com/davidleathers113/claudemd/stargazers)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This repository showcases creative ways developers are using CLAUDE.md files to enhance their Claude Code workflows. From simple productivity hacks to complex multi-agent orchestration systems, these examples demonstrate the flexibility and power of Claude Code's configuration system.
+## 🌟 Why This Repository?
 
-## 📚 What is CLAUDE.md?
+Claude Code is powerful out-of-the-box, but with creative CLAUDE.md configurations and custom commands, it becomes a development superpower. This collection showcases:
 
-CLAUDE.md is a special markdown file that Claude Code automatically reads when starting a session in a project directory. It serves as:
+- 🚀 **Productivity Patterns** - Streamline repetitive tasks
+- 🧠 **Advanced Orchestration** - Multi-agent development systems
+- 📚 **Real-World Examples** - Battle-tested configurations
+- 🔬 **Research & Analysis** - What's possible vs. what's practical
 
-- **Project Context**: Provides Claude with understanding of your codebase, conventions, and requirements
-- **Command Storage**: Stores frequently used commands (build, test, lint) for quick access
-- **Style Guide**: Documents coding preferences, naming conventions, and best practices
-- **Persistent Memory**: Maintains important information across Claude Code sessions
+## 📖 Quick Navigation
 
-## 🚀 Examples in This Repository
+<table>
+<tr>
+<td>
 
-### 1. **General Usage** (`/examples/general/`)
-- **arguments.md**: Demonstrates the use of `$ARGUMENTS` in custom slash commands
-- Basic patterns for command templating and parameter passing
+### 🎯 By Use Case
+- [Project Setup](docs/patterns/project-setup.md)
+- [Code Generation](docs/patterns/code-generation.md)
+- [Testing & QA](docs/patterns/testing-qa.md)
+- [Documentation](docs/patterns/documentation.md)
+- [Refactoring](docs/patterns/refactoring.md)
 
-### 2. **Infinite Agent Loop** (`/examples/infinite_agent_loop/`)
-An ambitious conceptual system for orchestrating unlimited parallel AI agents:
-- **infinite-agent-loop.md**: Main orchestration engine specification
-- **infinite-agent-components.md**: Component definitions and patterns
-- **infinite-agent-loop-glossary.md**: Comprehensive terminology guide
+</td>
+<td>
 
-*Note: This is a creative interpretation that extends beyond Claude Code's built-in capabilities*
+### 🛠 By Feature
+- [Custom Commands](docs/features/custom-commands.md)
+- [$ARGUMENTS Usage](docs/features/arguments.md)
+- [Multi-Agent Patterns](docs/features/multi-agent.md)
+- [Git Integration](docs/features/git-integration.md)
+- [MCP Servers](docs/features/mcp-servers.md)
 
-### 3. **Multi-Agent Coordination** (`/examples/multi_agent_coordination/`)
-- **claude-sparc.md**: The SPARC (Specification, Pseudocode, Architecture, Refinement, Completion) methodology for structured development
+</td>
+<td>
 
-### 4. **Simon Couch's Patterns** (`/examples/simon_couch/`)
-- **content-injection.md**: Innovative technique for injecting external documentation and context into Claude Code sessions
+### 📊 By Complexity
+- [Beginner](docs/levels/beginner.md) ⭐
+- [Intermediate](docs/levels/intermediate.md) ⭐⭐
+- [Advanced](docs/levels/advanced.md) ⭐⭐⭐
+- [Expert](docs/levels/expert.md) ⭐⭐⭐⭐
 
-## 💡 Key Patterns and Techniques
+</td>
+</tr>
+</table>
 
-### Official Claude Code Features
-- **Custom Slash Commands**: Store reusable prompts in `.claude/commands/` directory
-- **$ARGUMENTS Variable**: Pass dynamic parameters to custom commands
-- **Headless Mode**: Run Claude Code non-interactively with `-p` flag
-- **Git Worktrees**: Work on multiple tasks in parallel with isolated environments
+## 🚀 Featured Examples
 
-### Creative Extensions
-- **Variable Interpolation Systems**: Using template-like syntax for dynamic content
-- **Multi-Agent Orchestration**: Coordinating multiple Claude instances
-- **Context Injection**: Loading external documentation into working memory
-- **Progressive Enhancement**: Evolving strategies based on iteration count
+### ⭐ Most Popular
 
-## 🛠️ How to Use These Examples
+<details>
+<summary><b>Infinite Agent Loop</b> - Generate unlimited variations with parallel agents</summary>
 
-1. **Study the Patterns**: Each example demonstrates different approaches to enhancing Claude Code
-2. **Adapt to Your Needs**: Modify the examples to fit your specific workflow
-3. **Create Your Own**: Use these as inspiration for your own creative implementations
-4. **Share Your Ideas**: Contribute your own innovative uses back to the community
+```markdown
+# 📍 Location: examples/infinite_agent_loop/
+# ⚡ Complexity: Expert
+# 🎯 Use Case: Mass content generation, solution exploration
 
-## 📝 Creating Your Own CLAUDE.md
+Key Features:
+- Parallel agent coordination
+- Wave-based execution
+- Automatic uniqueness enforcement
+- Context optimization
+```
+[View Full Example →](examples/infinite_agent_loop/)
+</details>
 
-Basic structure for a CLAUDE.md file:
+<details>
+<summary><b>Task-Driven Orchestrator</b> - Give a goal, get a complete solution</summary>
 
+```markdown
+# 📍 Location: examples/infinite_agent_loop/task-driven-orchestrator.md
+# ⚡ Complexity: Advanced
+# 🎯 Use Case: Feature development, system optimization
+
+Key Features:
+- Automatic task decomposition
+- Intelligent agent selection
+- Dependency-aware execution
+- Adaptive quality gates
+```
+[View Full Example →](examples/infinite_agent_loop/task-driven-orchestrator.md)
+</details>
+
+<details>
+<summary><b>SPARC Methodology</b> - Structured approach to complex problems</summary>
+
+```markdown
+# 📍 Location: examples/multi_agent_coordination/claude-sparc.md
+# ⚡ Complexity: Intermediate
+# 🎯 Use Case: Systematic development, code architecture
+
+SPARC Flow:
+1. Specification - Define the problem
+2. Pseudocode - Plan the approach
+3. Architecture - Design the system
+4. Refinement - Iterate on solution
+5. Completion - Finalize and test
+```
+[View Full Example →](examples/multi_agent_coordination/claude-sparc.md)
+</details>
+
+### 🔥 Latest Additions
+
+- **[Annotated Orchestrator](examples/infinite_agent_loop/annotated-orchestrator.md)** - Learn prompt engineering with heavy annotations
+- **[Adaptive Multi-Agent](examples/infinite_agent_loop/adaptive-multi-agent-orchestrator.md)** - Self-organizing based on project needs
+- **[Multi-File Development](examples/infinite_agent_loop/multi-file-dev.md)** - Parallel file editing without conflicts
+
+## 💡 Quick Start Templates
+
+### Basic CLAUDE.md
 ```markdown
 # Project Name
 
-## Overview
-Brief description of your project and its purpose.
-
-## Key Commands
+## 🛠 Commands
 - Build: `npm run build`
 - Test: `npm test`
-- Lint: `npm run lint`
+- Deploy: `npm run deploy`
 
-## Coding Conventions
-- Use TypeScript for all new files
-- Follow ESLint configuration
-- Prefer functional components in React
+## 🎨 Conventions
+- TypeScript strict mode
+- Prettier formatting
+- Conventional commits
 
-## Project Structure
+## 📁 Structure
 - `/src` - Source code
 - `/tests` - Test files
 - `/docs` - Documentation
-
-## Special Instructions
-Any project-specific guidance for Claude Code...
 ```
+[More Templates →](templates/)
+
+### Custom Command Template
+```markdown
+# Command Name
+
+Parse from $ARGUMENTS:
+1. `param1` - Description
+2. `param2` - Description (optional)
+
+## Execution
+[Your command logic here]
+```
+[Command Examples →](templates/commands/)
+
+## 📚 Documentation
+
+### 🎓 Learning Path
+1. **[Getting Started Guide](docs/getting-started.md)** - First steps with CLAUDE.md
+2. **[Pattern Catalog](docs/patterns/)** - Common patterns and when to use them
+3. **[Advanced Techniques](docs/advanced/)** - Push Claude Code to its limits
+4. **[Research Findings](examples/infinite_agent_loop/research/RESEARCH_SUMMARY.md)** - What's real vs. conceptual
+
+### 📖 Reference
+- **[CLAUDE.md Syntax](docs/reference/syntax.md)** - Complete syntax reference
+- **[Best Practices](docs/reference/best-practices.md)** - Do's and don'ts
+- **[Troubleshooting](docs/reference/troubleshooting.md)** - Common issues and solutions
+- **[Performance Tips](docs/reference/performance.md)** - Optimize your workflows
 
 ## 🤝 Contributing
 
-We welcome contributions! If you've discovered a creative use of CLAUDE.md files:
+We love contributions! See our [Contributing Guide](CONTRIBUTING.md) for details.
 
-1. Create a new directory under `/examples/` with a descriptive name
-2. Add your CLAUDE.md example(s) with clear documentation
-3. Include a README explaining your approach and use case
-4. Submit a pull request with a description of your innovation
+### Ways to Contribute
+- 📝 **Share Your CLAUDE.md** - Add your creative configurations
+- 🐛 **Report Issues** - Help us improve examples
+- 📚 **Improve Docs** - Make examples clearer
+- 💡 **Suggest Ideas** - What would you like to see?
 
-## 📚 Resources
+### Hall of Fame 🏆
+- [@indydevdan](examples/infinite_agent_loop/indydevdan/) - Infinite Agent Loop concept
+- [@harper_reed](examples/harper_reed/) - Minimalist power configuration
+- [@simon_couch](examples/simon_couch/) - Content injection technique
+- *Your name here!*
 
-- [Claude Code Documentation](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
-- [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
-- [Model Context Protocol (MCP)](https://modelcontextprotocol.io)
+## 📊 Stats & Insights
 
-## ⚠️ Important Notes
+- **30+** Creative examples
+- **24** Research documents
+- **4** Orchestration patterns
+- **Growing** community
 
-- Some examples (like the Infinite Agent Loop) are conceptual designs that extend beyond Claude Code's current capabilities
-- Always distinguish between official features and creative interpretations
-- Test thoroughly when implementing complex patterns
-- Consider API usage costs when running parallel agents
+## 🔗 Resources
 
-## 🌟 Highlights
+### Official
+- [Claude Code Docs](https://docs.anthropic.com/en/docs/claude-code) - Official documentation
+- [Anthropic Blog](https://www.anthropic.com/blog) - Latest updates
 
-- **Most Practical**: Simon Couch's content injection technique for documentation
-- **Most Ambitious**: The Infinite Agent Loop parallel generation system
-- **Most Structured**: SPARC methodology for systematic development
-- **Most Accessible**: Basic $ARGUMENTS usage in custom commands
+### Community
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - MCP server collection
+- [awesome-gpt-prompt-engineering](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering) - Prompt engineering
+
+### Tools & Extensions
+- [Claude Code CLI](https://docs.anthropic.com/claude-code/cli) - Command line interface
+- [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) - IDE integration
+
+## ⚖️ License
+
+This collection is MIT licensed. Individual examples may have their own licenses.
 
 ---
 
-*This repository is a community collection and is not affiliated with Anthropic. Claude Code and Claude are trademarks of Anthropic.*
+<p align="center">
+  <b>⭐ Star this repo to bookmark it!</b><br>
+  <sub>Built with ❤️ by the Claude Code community</sub>
+</p>
